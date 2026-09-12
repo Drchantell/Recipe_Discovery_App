@@ -15,19 +15,8 @@ function HomePage() {
 
   return (
     <section>
-      <div className="hero">
-        <p className="eyebrow">Easy recipe search</p>
-        <h1>Find a Recipe</h1>
-        <p>
-          Choose a category, search for a meal, and save the recipes you want
-          to try later.
-        </p>
-      </div>
-
-      <div className="section-heading">
-        <h2>Categories</h2>
-        <p>{categories.length} options</p>
-      </div>
+      <h1 className="main-title">Dr. Chantell's Recipe Finder</h1>
+      <p>Browse categories and choose a meal to cook.</p>
 
       <div className="card-grid">
         {categories.map((category) => (

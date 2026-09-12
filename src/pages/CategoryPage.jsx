@@ -17,16 +17,11 @@ function CategoryPage() {
   return (
     <section>
       <Link className="back-link" to="/">
-        ← Back to Categories
+        ← Back
       </Link>
 
-      <div className="section-heading">
-        <div>
-          <p className="eyebrow">Category</p>
-          <h1>{categoryName} Recipes</h1>
-        </div>
-        <p>{recipes.length} recipes found</p>
-      </div>
+      <h1>{categoryName} Recipes</h1>
+      <p>{recipes.length} recipes found</p>
 
       {recipes.length > 0 ? (
         <div className="card-grid">
